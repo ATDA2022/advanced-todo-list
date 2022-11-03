@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6974761798.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="todo.css">
+    <title>To-do List</title>
+</head>
+<body>
+    <section class="todo">
+    <input type="checkbox" id="collaps">
+        <div class="sidebar">
+            <div class="side"></div>
+            <div class="top">
+            <h2 class="myCAT">My Categories</h2>
+            <input id="inp-cat" type="text" autocomplete="off" placeholder="Enter Category">
+            <input type="color" id="color">
+            <br>
+            <button id="sub-cat"><i class="fas fa-plus"></i>add category</button>
+                <ul class="all-cat">
+                    <li class="all-catergories"><h3 class="all-catergories">All<h3><span class="all-catergories color-inlist" style="background-color: #1734e7;"></span></li>
+                    <li class="catergory-inlist"><h3>Personal</h3><span class="color-inlist" style="background-color: #01ca7d;"></span></li>
+                    <li class="catergory-inlist"><h3>Business</h3><span class="color-inlist" style="background-color: #cfff24;"></span></li>
+                </ul>
+            </div>
+            <div class="history">
+                <h4 class="his-sen">History<span class="his-lenth">0</span></h4>
+                <div class="his">
+                    <ul class="his-list">
+                        <button id="del-his" class="dil-his">Delete All</button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="con">
+            <form class="inputs">
+                <div class="heading">
+                <h2>To-do list</h2>
+                <p class="viwingSen">You are currently viewing All Categories</p>
+                </div>
+                <div class="cat-sel">
+                    <select id="inp-sel">
+                        <option value="0">select a category</option>
+                        <option id="#01ca7d" value="personal">personal</option>
+                        <option id="#cfff24" value="business">business</option>
+                    </select>
+                </div>
+                <div class="inputs">
+                    <input id="inp-todo" type="text" autocomplete="off" placeholder="Enter Todo">
+                    <button type="button" id="add-todo"><i class="fas fa-plus"></i>Add ToDo</button>
+                </div>
+                <div class="search">
+                    <input type="checkbox" id="openS">
+                        <input type="text" placeholder="Search" id="search">
+                        <button type="button"><label for="openS" class="fas fa-search"></label></button>
+                </div>
+            </form>
+            </div>
+        <div class="all-todo-inlist">            
+        </div>
+    </section>
+    <script src="./todo.js"></script>
+</body>
+</html>
